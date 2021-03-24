@@ -1,14 +1,19 @@
 body{
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size: 12px;
-
+    box-sizing:border-box;
+    background-color: lightgrey;
+    width: 100%;
+  
 }
+
 
 
 header {color: black;
 background-color: #EAC926; 
 padding-bottom: 15px;
+width: 100%;
 }
 
 ul {
@@ -32,8 +37,12 @@ h3{
 }
 
 main {
-    background-color: lightgray;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 30px;
+   
+    
 }
 
 
@@ -52,15 +61,16 @@ main {
 
 article {
     background-color: #FFFFFF;
-    max-width: 90%;
+    max-width: 100%;
     margin-left: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
+    box-sizing: border-box;
   }
 
-  img {
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -102,6 +112,8 @@ article {
 
 .fa-truck {
     display: inline;
+    color: limegreen;
+       
   }
   
 .precio{
@@ -110,10 +122,15 @@ article {
 
 .descuento{
     font-size: 16px;
+    color: limegreen;
+    
 }
 
 .descripciones{
     font-size: 16px;
+    color: rgb(0,0,0, 0.5);
+    font-weight: 500;
+   
 }
 .icon-center {
     color:#0D5ACA;
@@ -125,6 +142,24 @@ article {
     text-align: center;
   }
   footer {
+    background-color: white;
     padding-top: 30px;
     text-align: center;
+    
   }
+  
+     
+  .articulo{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+    .bordes{
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+    }
+.foot{
+    margin-left: auto;
+    margin-right: auto;
+}
