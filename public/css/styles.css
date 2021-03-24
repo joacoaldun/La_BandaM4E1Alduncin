@@ -5,27 +5,47 @@ body{
     box-sizing:border-box;
     background-color: lightgrey;
     width: 100%;
-  
+    
 }
 
 
 
 header {color: black;
-background-color: #EAC926; 
-padding-bottom: 15px;
-width: 100%;
+        background-color: #EAC926; 
+        padding-bottom: 15px;
+        width: 100%;
 }
+    
+    .primerflex{
+        display: flex;
+    width: 40%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    justify-content: flex-start;
+    padding-left: 3%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+        
+    }
 
-ul {
+    .segundoflex{
+        display: flex;
+        flex-flow: row;
+        
+
+    }
+
+    ul {
     padding-left: 0px;
-  }
+    display: none;
+    }
   
-  li {
+    li {
     list-style-type: none;
     padding: 0;
-  }
+    }
 
-  ul li a{
+     ul li a{
      color:black;
      text-decoration: none;
 
@@ -40,7 +60,7 @@ main {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
    
     
 }
@@ -62,12 +82,13 @@ main {
 article {
     background-color: #FFFFFF;
     max-width: 100%;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
+    
   }
 
 img {
@@ -77,13 +98,20 @@ img {
   }
 
   .search{
-    margin-top:20px ;
-    margin-left:  20px; ;
-    display: block;
+    margin-top:0px ;
+    margin-left:  20px;
+    
+    
 }
 
 .lupita {
-    margin-left: 20px;
+    margin-left: 5px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 10%;
+    margin-top: 1px;
+    
 }
 
 .center{
@@ -111,18 +139,31 @@ img {
 }
 
 .fa-truck {
-    display: inline;
+    
     color: limegreen;
-       
-  }
+}
+
+.titulo{
+    font-size: 24px;
+    margin-left: 0px;
+    color: rgb(0,0,0, 0.5);
+    
+}
   
 .precio{
     font-size: 18px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
 }
 
 .descuento{
     font-size: 16px;
     color: limegreen;
+    padding-top: 0px;
+    
+
+    
     
 }
 
@@ -130,6 +171,8 @@ img {
     font-size: 16px;
     color: rgb(0,0,0, 0.5);
     font-weight: 500;
+    display: none;
+    margin-top: 50px;
    
 }
 .icon-center {
@@ -145,6 +188,7 @@ img {
     background-color: white;
     padding-top: 30px;
     text-align: center;
+    
     
   }
   
@@ -162,4 +206,44 @@ img {
 .foot{
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+.camion{
+    color: #39b54a;
+    display: inline-block;
+    border-radius: 40%;
+    box-shadow: 0px 0px 2px #39b54a;
+    padding: 0.5em 0.6em;
+}
+
+@media (min-width:361px){
+    .descripciones{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+ul{
+    display: block;
+    
+}
+   .burger-menu{
+       display: none;
+   }
+}
+@media (min-width:769px){
+    .descripciones{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+ul{
+    display: block;
+    
+}
+   .burger-menu{
+       display: none;
+   }
 }
