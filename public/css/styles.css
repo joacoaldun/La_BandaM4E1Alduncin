@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
 body{
     margin: 0px;
     font-family:'Roboto', sans-serif;
@@ -51,6 +56,9 @@ header {color: black;
 
   }
 
+  section.banner img{
+    width: 100%;
+}
 h3{
     font-size: 24px;
     margin-left: 20px;
@@ -60,7 +68,7 @@ main {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
    
     
 }
@@ -154,13 +162,14 @@ img {
     font-size: 18px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    
+    width: 30%;
 }
 
 .descuento{
     font-size: 16px;
     color: limegreen;
-    padding-top: 0px;
+    width: 70%;
+
     
 
     
@@ -172,7 +181,7 @@ img {
     color: rgb(0,0,0, 0.5);
     font-weight: 500;
     display: none;
-    margin-top: 50px;
+    margin-top: 20px;
    
 }
 .icon-center {
@@ -186,36 +195,64 @@ img {
   }
   footer {
     background-color: white;
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    
     
     
   }
+  main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+   
+   main section article img{
+    width: 100%;
+}
+   
+   
+   article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px; 
+   }
   
-     
-  .articulo{
-      margin-bottom: 10px;
-      margin-top: 10px;
+   .articulo{
+    
+      margin: 10px 0px;
       margin-right: auto;
       margin-left: auto;
   }
-    .bordes{
-        border-top: 1px solid #ebebeb;
-        padding: 15px;
-    }
+    
+    
 .foot{
     margin-left: auto;
     margin-right: auto;
     
 }
-
-.camion{
-    color: #39b54a;
-    display: inline-block;
-    border-radius: 40%;
-    box-shadow: 0px 0px 2px #39b54a;
-    padding: 0.5em 0.6em;
+div.ultimavisita, div.ofertas{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+
+
 
 @media (min-width:361px){
     .descripciones{
@@ -223,7 +260,23 @@ img {
     }
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+        
+        }
+    .productos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        main section div.productos article{
+            width: 45%;
+        }
+    
+       .precio, .descuento{
+            width: 50%
+        }
+        
 ul{
     display: block;
     
@@ -246,4 +299,7 @@ ul{
    .burger-menu{
        display: none;
    }
+   main section div.productos article{
+    width: 22%;
+}
 }
