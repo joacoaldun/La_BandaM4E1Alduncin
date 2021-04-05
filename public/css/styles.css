@@ -223,6 +223,7 @@ img {
     box-sizing: border-box;
     position: relative;
     bottom: -9vh;
+    margin-top: 0%;
     
     
     
@@ -349,6 +350,7 @@ div.ultimavisita, div.ofertas{
         border: 0px;
         width: 100%;
     }
+    
 
     /*Estilos del login*/ 
     .sectionlogin{
@@ -506,10 +508,9 @@ div.ultimavisita, div.ofertas{
     main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-ul{
-    display: block;
+
     
-}
+
    .burger-menu{
        display: none;
    }
@@ -528,5 +529,5 @@ ul{
     color: lightseagreen;
 }
 
-
 }
+
