@@ -166,6 +166,7 @@ img {
 .fa-truck {
     
     color: limegreen;
+    
 }
 
 .titulo{
@@ -186,6 +187,8 @@ img {
     font-size: 16px;
     color: limegreen;
     width: 70%;
+    position: relative;
+    left: 11%;
 
     
 
@@ -194,12 +197,12 @@ img {
 }
 
 .descripciones{
-    font-size: 16px;
+    font-size: 0;
     color: rgb(0,0,0, 0.5);
     font-weight: 500;
-    display: none;
+    
     margin-top: 20px;
-    transition: all 500ms;
+    transition: all 300ms;
    
 }
 .icon-center {
@@ -210,6 +213,7 @@ img {
     display:block;
     width: 27px;
     text-align: center;
+    transition: all 300ms;
   }
   footer {
     background-color: white;
@@ -264,13 +268,17 @@ img {
     margin-left: auto;
     margin-right: auto;
     
+    
 }
 div.ultimavisita, div.ofertas{
     display: flex;
     flex-wrap: wrap;
 }
 
+
+
 /* Estilo del registro*/
+
 
 .sectionregistro{
     display: flex;
@@ -278,6 +286,8 @@ div.ultimavisita, div.ofertas{
     align-items: center;
     box-sizing: border-box;
     width: 100%;
+    
+    
     
 }
     .divnombre{
@@ -347,6 +357,9 @@ div.ultimavisita, div.ofertas{
         align-items: center;
         box-sizing: border-box;
         width: 100%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        
         
     }
     
@@ -382,7 +395,13 @@ div.ultimavisita, div.ofertas{
                 width: 100%;
                 background-color:royalblue;
                 color: white;
+                transition: all 300ms;
 
+        }
+        .buttonlogin:hover{
+            background:#0022AA ;
+       
+        
         }
 
 
@@ -391,7 +410,7 @@ div.ultimavisita, div.ofertas{
 
 @media (min-width:361px){ 
     main section article:hover h4.descripciones{
-        display: block;
+        font-size: 16px;
     }
     
     main section article:hover{
@@ -497,4 +516,17 @@ ul{
    main section div.productos article{
     width: 22%;
 }
+
+.footerflex{
+    display: flex;
+    flex-flow: row;
+}
+.foot{
+    text-align: left;
+}
+.icon-center:hover{
+    color: lightseagreen;
+}
+
+
 }
